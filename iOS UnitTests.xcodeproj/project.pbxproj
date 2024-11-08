@@ -17,6 +17,8 @@
 		F96586002CDE0E7A00D4ADEF /* iOS_UnitTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96585FF2CDE0E7A00D4ADEF /* iOS_UnitTestsTests.swift */; };
 		F965860A2CDE0E7A00D4ADEF /* iOS_UnitTestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96586092CDE0E7A00D4ADEF /* iOS_UnitTestsUITests.swift */; };
 		F965860C2CDE0E7A00D4ADEF /* iOS_UnitTestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F965860B2CDE0E7A00D4ADEF /* iOS_UnitTestsUITestsLaunchTests.swift */; };
+		F965861A2CDE0F6A00D4ADEF /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96586192CDE0F6A00D4ADEF /* ChatListViewModel.swift */; };
+		F965861D2CDE107D00D4ADEF /* ChatListViewModel_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F965861C2CDE107D00D4ADEF /* ChatListViewModel_tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F96586052CDE0E7A00D4ADEF /* iOS UnitTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS UnitTestsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96586092CDE0E7A00D4ADEF /* iOS_UnitTestsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_UnitTestsUITests.swift; sourceTree = "<group>"; };
 		F965860B2CDE0E7A00D4ADEF /* iOS_UnitTestsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_UnitTestsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F96586192CDE0F6A00D4ADEF /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		F965861C2CDE107D00D4ADEF /* ChatListViewModel_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel_tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		F96585E42CDE0E7700D4ADEF /* iOS UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				F96586182CDE0F5300D4ADEF /* ChatViewModel */,
 				F96585E52CDE0E7700D4ADEF /* AppDelegate.swift */,
 				F96585E72CDE0E7700D4ADEF /* SceneDelegate.swift */,
 				F96585E92CDE0E7700D4ADEF /* ViewController.swift */,
@@ -116,6 +121,7 @@
 		F96585FE2CDE0E7A00D4ADEF /* iOS UnitTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F965861B2CDE102600D4ADEF /* ChatListViewModel_Tests */,
 				F96585FF2CDE0E7A00D4ADEF /* iOS_UnitTestsTests.swift */,
 			);
 			path = "iOS UnitTestsTests";
@@ -128,6 +134,22 @@
 				F965860B2CDE0E7A00D4ADEF /* iOS_UnitTestsUITestsLaunchTests.swift */,
 			);
 			path = "iOS UnitTestsUITests";
+			sourceTree = "<group>";
+		};
+		F96586182CDE0F5300D4ADEF /* ChatViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F96586192CDE0F6A00D4ADEF /* ChatListViewModel.swift */,
+			);
+			name = ChatViewModel;
+			sourceTree = "<group>";
+		};
+		F965861B2CDE102600D4ADEF /* ChatListViewModel_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F965861C2CDE107D00D4ADEF /* ChatListViewModel_tests.swift */,
+			);
+			name = ChatListViewModel_Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +286,7 @@
 				F96585EA2CDE0E7700D4ADEF /* ViewController.swift in Sources */,
 				F96585E62CDE0E7700D4ADEF /* AppDelegate.swift in Sources */,
 				F96585E82CDE0E7700D4ADEF /* SceneDelegate.swift in Sources */,
+				F965861A2CDE0F6A00D4ADEF /* ChatListViewModel.swift in Sources */,
 				F96585F02CDE0E7700D4ADEF /* iOS_UnitTests.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F965861D2CDE107D00D4ADEF /* ChatListViewModel_tests.swift in Sources */,
 				F96586002CDE0E7A00D4ADEF /* iOS_UnitTestsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +526,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQH88KC8RZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -521,6 +546,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQH88KC8RZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MARKETING_VERSION = 1.0;
@@ -539,6 +565,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQH88KC8RZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com..iOS-UnitTestsUITests";
@@ -556,6 +583,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQH88KC8RZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com..iOS-UnitTestsUITests";
